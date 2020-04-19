@@ -1,0 +1,253 @@
+Script started on Sun Apr 19 19:04:43 2020
+[1m[7m%[27m[1m[0m                                                                                ]7;file://PC-MAC13.local/Users/lofman/Projects/devopswithdocker/part1[0m[27m[24m[Jlofman@PC-MAC13 part1 % [K[?2004hexitdocker exec exercise5a bash[20Dstart exercise5a    [16Dcontainer ls -a [15Dstart exercise5a[16Dexec[P[11C bash[27Dexit                       [23D    exitdocker exec exercise5a bash[20Dstart exercise5a    [16Dcontainer ls -a    -a[15Dstart exercise5a[16Dexec[P[11C bash[27Dexit                       [23D    [7mdocker run -it --name exercise5c  ubuntu:16.04 sh -c 'ap[7mt[7m-get update; apt-get install -y curl; echo "Input website:"; read website; echo[7m [7m"Searching.."; sleep 1; curl http://$website;'[27m[K[A[A[23D[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27mi[27mt[27m [27m-[27m-[27mn[27ma[27mm[27me[27m [27me[27mx[27me[27mr[27mc[27mi[27ms[27me[27m5[27mc[27m [27m [27mu[27mb[27mu[27mn[27mt[27mu[27m:[27m1[27m6[27m.[27m0[27m4[27m [27ms[27mh[27m [27m-[27mc[27m [27m'[27ma[27mpt[27m-[27mg[27me[27mt[27m [27mu[27mp[27md[27ma[27mt[27me[27m;[27m [27ma[27mp[27mt[27m-[27mg[27me[27mt[27m [27mi[27mn[27ms[27mt[27ma[27ml[27ml[27m [27m-[27my[27m [27mc[27mu[27mr[27ml[27m;[27m [27me[27mc[27mh[27mo[27m [27m"[27mI[27mn[27mp[27mu[27mt[27m [27mw[27me[27mb[27ms[27mi[27mt[27me[27m:[27m"[27m;[27m [27mr[27me[27ma[27md[27m [27mw[27me[27mb[27ms[27mi[27mt[27me[27m;[27m [27me[27mc[27mh[27mo [27m"[27mS[27me[27ma[27mr[27mc[27mh[27mi[27mn[27mg[27m.[27m.[27m"[27m;[27m [27ms[27ml[27me[27me[27mp[27m [27m1[27m;[27m [27mc[27mu[27mr[27ml[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27m$[27mw[27me[27mb[27ms[27mi[27mt[27me[27m;[27m'[1C[A[79C[A[79Cfc  ubuntu:16.04 sh -c 'apt-get update; apt-get install -y curl; echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;' [A[A[7C[1C [P[22Cpt[P[78Co [P[47C [A[A[7C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1B[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1B[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[?2004l
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu xenial InRelease [247 kB]
+0% [1 InRelease 2603 B/247 kB 1%] [Waiting for headers]                                                       Get:2 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
+0% [1 InRelease 90.9 kB/247 kB 37%] [2 InRelease 2585 B/109 kB 2%]                                                                  0% [2 InRelease 14.2 kB/109 kB 13%]0% [1 InRelease gpgv 247 kB] [Waiting for headers] [2 InRelease 14.2 kB/109 kB                                                                                Get:3 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
+0% [1 InRelease gpgv 247 kB] [3 InRelease 5499 B/109 kB 5%] [2 InRelease 14.2 k                                                                               0% [1 InRelease gpgv 247 kB] [2 InRelease 14.2 kB/109 kB 13%]                                                             Get:4 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]
+0% [1 InRelease gpgv 247 kB] [4 InRelease 6947 B/107 kB 7%] [2 InRelease 22.9 k                                                                               0% [1 InRelease gpgv 247 kB] [2 InRelease 25.8 kB/109 kB 24%]                                                             0% [2 InRelease 31.5 kB/109 kB 29%]0% [3 InRelease gpgv 109 kB] [2 InRelease 31.5 kB/109 kB 29%]                                                             Get:5 http://archive.ubuntu.com/ubuntu xenial/main amd64 Packages [1558 kB]
+0% [3 InRelease gpgv 109 kB] [5 Packages 5581 B/1558 kB 0%] [2 InRelease 40.2 k                                                                               0% [5 Packages 224 kB/1558 kB 14%] [2 InRelease 57.6 kB/109 kB 53%]0% [4 InRelease gpgv 107 kB] [5 Packages 224 kB/1558 kB 14%] [2 InRelease 57.6                                                                                0% [5 Packages 1260 kB/1558 kB 81%] [2 InRelease 109 kB/109 kB 100%]                                                                    0% [5 Packages 1260 kB/1558 kB 81%]0% [2 InRelease gpgv 109 kB] [5 Packages 1265 kB/1558 kB 81%]                                                             22% [5 Packages 1501 kB/1558 kB 96%]                                    23% [Waiting for headers]23% [5 Packages store 0 B] [Waiting for headers]                                                Get:6 http://archive.ubuntu.com/ubuntu xenial/restricted amd64 Packages [14.1 kB]
+23% [5 Packages store 0 B] [6 Packages 7033 B/14.1 kB 50%] [Waiting for headers                                                                               23% [5 Packages store 0 B] [Waiting for headers] [Waiting for headers]                                                                      Get:7 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages [9827 kB]
+23% [5 Packages store 0 B] [7 Packages 5743 B/9827 kB 0%] [Waiting for headers]                                                                               Get:8 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [1087 kB]
+26% [5 Packages store 0 B] [7 Packages 681 kB/9827 kB 7%] [8 Packages 2685 B/10                                                                               30% [7 Packages 1254 kB/9827 kB 13%] [8 Packages 67.8 kB/1087 kB 6%]30% [6 Packages store 0 B] [7 Packages 1254 kB/9827 kB 13%] [8 Packages 67.8 kB                                                                               31% [7 Packages 1364 kB/9827 kB 14%] [8 Packages 79.4 kB/1087 kB 7%]47% [7 Packages 4215 kB/9827 kB 43%] [8 Packages 593 kB/1087 kB 55%]                                                                    62% [7 Packages 6687 kB/9827 kB 68%]62% [8 Packages store 0 B] [7 Packages 6687 kB/9827 kB 68%]                                                           71% [7 Packages 8479 kB/9827 kB 86%] [Waiting for headers]                                                          Get:9 http://security.ubuntu.com/ubuntu xenial-security/restricted amd64 Packages [12.7 kB]
+71% [7 Packages 8511 kB/9827 kB 87%] [9 Packages 2689 B/12.7 kB 21%]                                                                    71% [7 Packages 8532 kB/9827 kB 87%] [Waiting for headers]                                                          Get:10 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [623 kB]
+72% [7 Packages 8565 kB/9827 kB 87%] [10 Packages 17.3 kB/623 kB 3%]72% [9 Packages store 0 B] [7 Packages 8568 kB/9827 kB 87%] [10 Packages 21.7 k                                                                               72% [7 Packages 8594 kB/9827 kB 87%] [10 Packages 33.2 kB/623 kB 5%]                                                                    79% [10 Packages 249 kB/623 kB 40%]                                   Get:11 http://archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages [176 kB]
+80% [11 Packages 64.0 kB/176 kB 36%] [10 Packages 249 kB/623 kB 40%]80% [7 Packages store 0 B] [11 Packages 64.2 kB/176 kB 36%] [10 Packages 249 kB80% [7 Packages store 0 B] [Waiting for headers] [10 Packages 249 kB/623 kB 40%                                                                               Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [1456 kB]
+80% [7 Packages store 0 B] [12 Packages 15.1 kB/1456 kB 1%] [10 Packages 249 kB                                                                               Get:13 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [6280 B]
+89% [7 Packages store 0 B] [12 Packages 1339 kB/1456 kB 92%] [13 Packages 6280                                                                                89% [7 Packages store 0 B] [12 Packages 1339 kB/1456 kB 92%]                                                            89% [7 Packages store 0 B] [Waiting for headers]                                                Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages [13.1 kB]
+89% [7 Packages store 0 B] [14 Packages 13.1 kB/13.1 kB 100%]                                                             89% [7 Packages store 0 B] [Waiting for headers]                                                Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [1028 kB]
+90% [7 Packages store 0 B] [15 Packages 55.9 kB/1028 kB 5%]                                                           Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [19.2 kB]
+94% [7 Packages store 0 B] [16 Packages 19.2 kB/19.2 kB 100%]                                                             Get:17 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages [7942 B]
+                                                             94% [7 Packages store 0 B] [17 Packages 7942 B/7942 B 100%]                                                           Get:18 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages [8807 B]
+94% [7 Packages store 0 B] [18 Packages 8807 B/8807 B 100%]                                                           94% [7 Packages store 0 B]                          95% [Working]95% [11 Packages store 0 B]                           96% [Working]96% [10 Packages store 0 B]                           96% [Working]96% [13 Packages store 0 B]                           97% [Working]97% [12 Packages store 0 B]                           97% [Working]97% [14 Packages store 0 B]                           98% [Working]98% [15 Packages store 0 B]                           98% [Working]98% [16 Packages store 0 B]                           99% [Working]99% [17 Packages store 0 B]                           99% [Working]99% [18 Packages store 0 B]                           100% [Working]              Fetched 16.4 MB in 2s (5592 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 9%Reading package lists... 9%Reading package lists... 10%Reading package lists... 10%Reading package lists... 67%Reading package lists... 67%Reading package lists... 68%Reading package lists... 68%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 9%Reading package lists... 9%Reading package lists... 10%Reading package lists... 10%Reading package lists... 67%Reading package lists... 67%Reading package lists... 68%Reading package lists... 68%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 79%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 91%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  ca-certificates krb5-locales libasn1-8-heimdal libcurl3-gnutls libffi6
+  libgmp10 libgnutls30 libgssapi-krb5-2 libgssapi3-heimdal libhcrypto4-heimdal
+  libheimbase1-heimdal libheimntlm0-heimdal libhogweed4 libhx509-5-heimdal
+  libidn11 libk5crypto3 libkeyutils1 libkrb5-26-heimdal libkrb5-3
+  libkrb5support0 libldap-2.4-2 libnettle6 libp11-kit0 libroken18-heimdal
+  librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libsqlite3-0
+  libssl1.0.0 libtasn1-6 libwind0-heimdal openssl
+Suggested packages:
+  gnutls-bin krb5-doc krb5-user libsasl2-modules-otp libsasl2-modules-ldap
+  libsasl2-modules-sql libsasl2-modules-gssapi-mit
+  | libsasl2-modules-gssapi-heimdal
+The following NEW packages will be installed:
+  ca-certificates curl krb5-locales libasn1-8-heimdal libcurl3-gnutls libffi6
+  libgmp10 libgnutls30 libgssapi-krb5-2 libgssapi3-heimdal libhcrypto4-heimdal
+  libheimbase1-heimdal libheimntlm0-heimdal libhogweed4 libhx509-5-heimdal
+  libidn11 libk5crypto3 libkeyutils1 libkrb5-26-heimdal libkrb5-3
+  libkrb5support0 libldap-2.4-2 libnettle6 libp11-kit0 libroken18-heimdal
+  librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libsqlite3-0
+  libssl1.0.0 libtasn1-6 libwind0-heimdal openssl
+0 upgraded, 34 newly installed, 0 to remove and 2 not upgraded.
+Need to get 5346 kB of archives.
+After this operation, 19.0 MB of additional disk space will be used.
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu xenial/main amd64 libffi6 amd64 3.2.1-4 [17.8 kB]
+0% [1 libffi6 2615 B/17.8 kB 15%]                                 1% [Working]            Get:2 http://archive.ubuntu.com/ubuntu xenial/main amd64 libgmp10 amd64 2:6.1.0+dfsg-2 [240 kB]
+1% [2 libgmp10 2613 B/240 kB 1%]                                5% [Waiting for headers]                        Get:3 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libnettle6 amd64 3.2-1ubuntu0.16.04.1 [93.5 kB]
+5% [3 libnettle6 1167 B/93.5 kB 1%]                                   7% [Working]            Get:4 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libhogweed4 amd64 3.2-1ubuntu0.16.04.1 [136 kB]
+7% [4 libhogweed4 7252 B/136 kB 5%]                                   10% [Waiting for headers]                         Get:5 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libidn11 amd64 1.32-3ubuntu1.2 [46.5 kB]
+10% [5 libidn11 2463 B/46.5 kB 5%]                                  11% [Waiting for headers]                         Get:6 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libp11-kit0 amd64 0.23.2-5~ubuntu16.04.1 [105 kB]
+11% [6 libp11-kit0 2818 B/105 kB 3%]                                    13% [Working]             Get:7 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libtasn1-6 amd64 4.7-3ubuntu0.16.04.3 [43.5 kB]
+13% [7 libtasn1-6 7083 B/43.5 kB 16%]                                     14% [Waiting for headers]                         Get:8 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgnutls30 amd64 3.4.10-4ubuntu1.7 [548 kB]
+14% [8 libgnutls30 7404 B/548 kB 1%]                                    23% [Waiting for headers]                         Get:9 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libsqlite3-0 amd64 3.11.0-1ubuntu1.4 [398 kB]
+23% [9 libsqlite3-0 20.5 kB/398 kB 5%]                                      30% [Waiting for headers]                         Get:10 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libssl1.0.0 amd64 1.0.2g-1ubuntu4.15 [1084 kB]
+30% [10 libssl1.0.0 4338 B/1084 kB 0%]                                      Get:11 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 openssl amd64 1.0.2g-1ubuntu4.15 [492 kB]
+                                      47% [11 openssl 45.1 kB/492 kB 9%]                                  54% [Waiting for headers]                         Get:12 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 ca-certificates all 20170717~16.04.2 [167 kB]
+55% [12 ca-certificates 16.4 kB/167 kB 10%]                                           58% [Working]             Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 krb5-locales all 1.13.2+dfsg-5ubuntu2.1 [13.6 kB]
+58% [13 krb5-locales 0 B/13.6 kB 0%]                                    58% [Waiting for headers]                         Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libroken18-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [41.4 kB]
+58% [14 libroken18-heimdal 0 B/41.4 kB 0%]                                          59% [Working]             Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libasn1-8-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [174 kB]
+59% [15 libasn1-8-heimdal 0 B/174 kB 0%]                                        63% [Waiting for headers]                         Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libkrb5support0 amd64 1.13.2+dfsg-5ubuntu2.1 [31.2 kB]
+63% [16 libkrb5support0 21.9 kB/31.2 kB 70%]                                            64% [Waiting for headers]                         Get:17 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libk5crypto3 amd64 1.13.2+dfsg-5ubuntu2.1 [81.3 kB]
+64% [17 libk5crypto3 12.3 kB/81.3 kB 15%]                                         66% [Waiting for headers]                         Get:18 http://archive.ubuntu.com/ubuntu xenial/main amd64 libkeyutils1 amd64 1.5.9-8ubuntu1 [9904 B]
+                         66% [Working]             Get:19 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libkrb5-3 amd64 1.13.2+dfsg-5ubuntu2.1 [273 kB]
+66% [19 libkrb5-3 0 B/273 kB 0%]                                71% [Waiting for headers]                         Get:20 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgssapi-krb5-2 amd64 1.13.2+dfsg-5ubuntu2.1 [120 kB]
+71% [20 libgssapi-krb5-2 6386 B/120 kB 5%]                                          73% [Working]             Get:21 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libhcrypto4-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [85.0 kB]
+74% [21 libhcrypto4-heimdal 61.4 kB/85.0 kB 72%]                                                Get:22 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libheimbase1-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [29.3 kB]
+76% [22 libheimbase1-heimdal 29.3 kB/29.3 kB 100%]                                                  76% [Waiting for headers]                         Get:23 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libwind0-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [47.8 kB]
+77% [23 libwind0-heimdal 23.4 kB/47.8 kB 49%]                                             78% [Working]             Get:24 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libhx509-5-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [107 kB]
+78% [24 libhx509-5-heimdal 20.5 kB/107 kB 19%]                                              80% [Waiting for headers]                         Get:25 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libkrb5-26-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [202 kB]
+81% [25 libkrb5-26-heimdal 53.2 kB/202 kB 26%]                                              83% [Waiting for headers]                         Get:26 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libheimntlm0-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [15.1 kB]
+84% [26 libheimntlm0-heimdal 15.1 kB/15.1 kB 100%]                                                  84% [Waiting for headers]                         Get:27 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgssapi3-heimdal amd64 1.7~git20150920+dfsg-4ubuntu1.16.04.1 [96.1 kB]
+84% [27 libgssapi3-heimdal 0 B/96.1 kB 0%]                                          86% [Waiting for headers]                         Get:28 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libsasl2-modules-db amd64 2.1.26.dfsg1-14ubuntu0.2 [14.5 kB]
+86% [28 libsasl2-modules-db 12.6 kB/14.5 kB 87%]                                                87% [Working]             Get:29 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libsasl2-2 amd64 2.1.26.dfsg1-14ubuntu0.2 [48.7 kB]
+87% [29 libsasl2-2 6959 B/48.7 kB 14%]                                      88% [Waiting for headers]                         Get:30 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libldap-2.4-2 amd64 2.4.42+dfsg-2ubuntu3.7 [160 kB]
+88% [30 libldap-2.4-2 5509 B/160 kB 3%]                                       91% [Waiting for headers]                         Get:31 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d-1ubuntu0.1 [54.4 kB]
+92% [31 librtmp1 21.8 kB/54.4 kB 40%]                                     Get:32 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libcurl3-gnutls amd64 7.47.0-1ubuntu2.14 [184 kB]
+93% [32 libcurl3-gnutls 26.4 kB/184 kB 14%]                                           96% [Waiting for headers]                         Get:33 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libsasl2-modules amd64 2.1.26.dfsg1-14ubuntu0.2 [47.7 kB]
+96% [33 libsasl2-modules 21.5 kB/47.7 kB 45%]                                             97% [Waiting for headers]                         Get:34 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 curl amd64 7.47.0-1ubuntu2.14 [139 kB]
+97% [34 curl 5375 B/139 kB 4%]                              100% [Working]              Fetched 5346 kB in 0s (5405 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package libffi6:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4781 files and directories currently installed.)
+Preparing to unpack .../libffi6_3.2.1-4_amd64.deb ...
+Unpacking libffi6:amd64 (3.2.1-4) ...
+Selecting previously unselected package libgmp10:amd64.
+Preparing to unpack .../libgmp10_2%3a6.1.0+dfsg-2_amd64.deb ...
+Unpacking libgmp10:amd64 (2:6.1.0+dfsg-2) ...
+Selecting previously unselected package libnettle6:amd64.
+Preparing to unpack .../libnettle6_3.2-1ubuntu0.16.04.1_amd64.deb ...
+Unpacking libnettle6:amd64 (3.2-1ubuntu0.16.04.1) ...
+Selecting previously unselected package libhogweed4:amd64.
+Preparing to unpack .../libhogweed4_3.2-1ubuntu0.16.04.1_amd64.deb ...
+Unpacking libhogweed4:amd64 (3.2-1ubuntu0.16.04.1) ...
+Selecting previously unselected package libidn11:amd64.
+Preparing to unpack .../libidn11_1.32-3ubuntu1.2_amd64.deb ...
+Unpacking libidn11:amd64 (1.32-3ubuntu1.2) ...
+Selecting previously unselected package libp11-kit0:amd64.
+Preparing to unpack .../libp11-kit0_0.23.2-5~ubuntu16.04.1_amd64.deb ...
+Unpacking libp11-kit0:amd64 (0.23.2-5~ubuntu16.04.1) ...
+Selecting previously unselected package libtasn1-6:amd64.
+Preparing to unpack .../libtasn1-6_4.7-3ubuntu0.16.04.3_amd64.deb ...
+Unpacking libtasn1-6:amd64 (4.7-3ubuntu0.16.04.3) ...
+Selecting previously unselected package libgnutls30:amd64.
+Preparing to unpack .../libgnutls30_3.4.10-4ubuntu1.7_amd64.deb ...
+Unpacking libgnutls30:amd64 (3.4.10-4ubuntu1.7) ...
+Selecting previously unselected package libsqlite3-0:amd64.
+Preparing to unpack .../libsqlite3-0_3.11.0-1ubuntu1.4_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.11.0-1ubuntu1.4) ...
+Selecting previously unselected package libssl1.0.0:amd64.
+Preparing to unpack .../libssl1.0.0_1.0.2g-1ubuntu4.15_amd64.deb ...
+Unpacking libssl1.0.0:amd64 (1.0.2g-1ubuntu4.15) ...
+Selecting previously unselected package openssl.
+Preparing to unpack .../openssl_1.0.2g-1ubuntu4.15_amd64.deb ...
+Unpacking openssl (1.0.2g-1ubuntu4.15) ...
+Selecting previously unselected package ca-certificates.
+Preparing to unpack .../ca-certificates_20170717~16.04.2_all.deb ...
+Unpacking ca-certificates (20170717~16.04.2) ...
+Selecting previously unselected package krb5-locales.
+Preparing to unpack .../krb5-locales_1.13.2+dfsg-5ubuntu2.1_all.deb ...
+Unpacking krb5-locales (1.13.2+dfsg-5ubuntu2.1) ...
+Selecting previously unselected package libroken18-heimdal:amd64.
+Preparing to unpack .../libroken18-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libroken18-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libasn1-8-heimdal:amd64.
+Preparing to unpack .../libasn1-8-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libasn1-8-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../libkrb5support0_1.13.2+dfsg-5ubuntu2.1_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.13.2+dfsg-5ubuntu2.1) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../libk5crypto3_1.13.2+dfsg-5ubuntu2.1_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.13.2+dfsg-5ubuntu2.1) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../libkeyutils1_1.5.9-8ubuntu1_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.5.9-8ubuntu1) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../libkrb5-3_1.13.2+dfsg-5ubuntu2.1_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.13.2+dfsg-5ubuntu2.1) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../libgssapi-krb5-2_1.13.2+dfsg-5ubuntu2.1_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.13.2+dfsg-5ubuntu2.1) ...
+Selecting previously unselected package libhcrypto4-heimdal:amd64.
+Preparing to unpack .../libhcrypto4-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libhcrypto4-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libheimbase1-heimdal:amd64.
+Preparing to unpack .../libheimbase1-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libheimbase1-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libwind0-heimdal:amd64.
+Preparing to unpack .../libwind0-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libwind0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libhx509-5-heimdal:amd64.
+Preparing to unpack .../libhx509-5-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libhx509-5-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libkrb5-26-heimdal:amd64.
+Preparing to unpack .../libkrb5-26-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libkrb5-26-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libheimntlm0-heimdal:amd64.
+Preparing to unpack .../libheimntlm0-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libheimntlm0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libgssapi3-heimdal:amd64.
+Preparing to unpack .../libgssapi3-heimdal_1.7~git20150920+dfsg-4ubuntu1.16.04.1_amd64.deb ...
+Unpacking libgssapi3-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../libsasl2-modules-db_2.1.26.dfsg1-14ubuntu0.2_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.26.dfsg1-14ubuntu0.2) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../libsasl2-2_2.1.26.dfsg1-14ubuntu0.2_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.26.dfsg1-14ubuntu0.2) ...
+Selecting previously unselected package libldap-2.4-2:amd64.
+Preparing to unpack .../libldap-2.4-2_2.4.42+dfsg-2ubuntu3.7_amd64.deb ...
+Unpacking libldap-2.4-2:amd64 (2.4.42+dfsg-2ubuntu3.7) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../librtmp1_2.4+20151223.gitfa8646d-1ubuntu0.1_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d-1ubuntu0.1) ...
+Selecting previously unselected package libcurl3-gnutls:amd64.
+Preparing to unpack .../libcurl3-gnutls_7.47.0-1ubuntu2.14_amd64.deb ...
+Unpacking libcurl3-gnutls:amd64 (7.47.0-1ubuntu2.14) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../libsasl2-modules_2.1.26.dfsg1-14ubuntu0.2_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.26.dfsg1-14ubuntu0.2) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../curl_7.47.0-1ubuntu2.14_amd64.deb ...
+Unpacking curl (7.47.0-1ubuntu2.14) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Setting up libffi6:amd64 (3.2.1-4) ...
+Setting up libgmp10:amd64 (2:6.1.0+dfsg-2) ...
+Setting up libnettle6:amd64 (3.2-1ubuntu0.16.04.1) ...
+Setting up libhogweed4:amd64 (3.2-1ubuntu0.16.04.1) ...
+Setting up libidn11:amd64 (1.32-3ubuntu1.2) ...
+Setting up libp11-kit0:amd64 (0.23.2-5~ubuntu16.04.1) ...
+Setting up libtasn1-6:amd64 (4.7-3ubuntu0.16.04.3) ...
+Setting up libgnutls30:amd64 (3.4.10-4ubuntu1.7) ...
+Setting up libsqlite3-0:amd64 (3.11.0-1ubuntu1.4) ...
+Setting up libssl1.0.0:amd64 (1.0.2g-1ubuntu4.15) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.22.1 /usr/local/share/perl/5.22.1 /usr/lib/x86_64-linux-gnu/perl5/5.22 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.22 /usr/share/perl/5.22 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up openssl (1.0.2g-1ubuntu4.15) ...
+Setting up ca-certificates (20170717~16.04.2) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.22.1 /usr/local/share/perl/5.22.1 /usr/lib/x86_64-linux-gnu/perl5/5.22 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.22 /usr/share/perl/5.22 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base .) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up krb5-locales (1.13.2+dfsg-5ubuntu2.1) ...
+Setting up libroken18-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libasn1-8-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libkrb5support0:amd64 (1.13.2+dfsg-5ubuntu2.1) ...
+Setting up libk5crypto3:amd64 (1.13.2+dfsg-5ubuntu2.1) ...
+Setting up libkeyutils1:amd64 (1.5.9-8ubuntu1) ...
+Setting up libkrb5-3:amd64 (1.13.2+dfsg-5ubuntu2.1) ...
+Setting up libgssapi-krb5-2:amd64 (1.13.2+dfsg-5ubuntu2.1) ...
+Setting up libhcrypto4-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libheimbase1-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libwind0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libhx509-5-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libkrb5-26-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libheimntlm0-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libgssapi3-heimdal:amd64 (1.7~git20150920+dfsg-4ubuntu1.16.04.1) ...
+Setting up libsasl2-modules-db:amd64 (2.1.26.dfsg1-14ubuntu0.2) ...
+Setting up libsasl2-2:amd64 (2.1.26.dfsg1-14ubuntu0.2) ...
+Setting up libldap-2.4-2:amd64 (2.4.42+dfsg-2ubuntu3.7) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d-1ubuntu0.1) ...
+Setting up libcurl3-gnutls:amd64 (7.47.0-1ubuntu2.14) ...
+Setting up libsasl2-modules:amd64 (2.1.26.dfsg1-14ubuntu0.2) ...
+Setting up curl (7.47.0-1ubuntu2.14) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Processing triggers for ca-certificates (20170717~16.04.2) ...
+Updating certificates in /etc/ssl/certs...
+148 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+Input website:
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
+[1m[7m%[27m[1m[0m                                                                                ]7;file://PC-MAC13.local/Users/lofman/Projects/devopswithdocker/part1[0m[27m[24m[Jlofman@PC-MAC13 part1 % [K[?2004heexit[?2004l
+
+Script done on Sun Apr 19 19:06:22 2020
