@@ -1,0 +1,24 @@
+Fri, 01 May 2020 13:19:19 GMT
+Fri, 01 May 2020 13:19:22 GMT
+Fri, 01 May 2020 13:19:25 GMT
+Fri, 01 May 2020 13:19:28 GMT
+Secret message is:
+"Volume bind mount is easy"
+Fri, 01 May 2020 13:19:34 GMT
+Fri, 01 May 2020 13:19:37 GMT
+Fri, 01 May 2020 13:19:40 GMT
+Fri, 01 May 2020 13:19:43 GMT
+Secret message is:
+"Volume bind mount is easy"
+Fri, 01 May 2020 13:19:49 GMT
+Fri, 01 May 2020 13:19:52 GMT
+Fri, 01 May 2020 13:19:55 GMT
+Fri, 01 May 2020 13:19:58 GMT
+Secret message is:
+"Volume bind mount is easy"
+Fri, 01 May 2020 13:20:04 GMT
+Fri, 01 May 2020 13:20:07 GMT
+Fri, 01 May 2020 13:20:10 GMT
+Fri, 01 May 2020 13:20:13 GMT
+Secret message is:
+"Volume bind mount is easy"

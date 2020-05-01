@@ -1,0 +1,10 @@
+Script started on Fri May  1 16:18:50 2020
+/devopswithdocker/part1/part1-8 % touch logs.txt
+/devopswithdocker/part1/part1-8 % docker run -v $(pwd)/logs.txt:/usr/app/logs.txt  devopsdockeruh/first_volume_exercise
+(node:1) ExperimentalWarning: The fs.promises API is experimental
+Wrote to file /usr/app/logs.txt
+Wrote to file /usr/app/logs.txt
+^CClosing file
+devopswithdocker/part1/part1-8 % exit
+
+Script done on Fri May  1 16:20:20 2020
