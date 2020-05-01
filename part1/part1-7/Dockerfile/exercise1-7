@@ -1,5 +1,5 @@
 Script started on Sun Apr 26 19:49:00 2020
-[1m[7m%[27m[1m[0m                                                                                                                                                                   ]7;file://PC-MAC13.local/Users/lofman/Projects/devopswithdocker/part1/part1-7/Dockerfile[0m[27m[24m[Jlofman@PC-MAC13 Dockerfile % [K[?2004h[7mdocker build -t curler .[27m[24D[27md[27mo[27mc[27mk[27me[27mr[27m [27mb[27mu[27mi[27ml[27md[27m [27m-[27mt[27m [27mc[27mu[27mr[27ml[27me[27mr[27m [27m. [?2004l
+devopswithdocker/part1/part1-7/Dockerfile % docker build -t curler .
 Sending build context to Docker daemon  4.096kB
 Step 1/7 : FROM ubuntu:16.04
  ---> 77be327e4b63
@@ -95,7 +95,7 @@ Get:34 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 curl amd64 7.4
 [91mdebconf: delaying package configuration, since apt-utils is not installed
 [0mFetched 5346 kB in 1s (5296 kB/s)
 Selecting previously unselected package libffi6:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4781 files and directories currently installed.)
+(Reading database ...(Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4781 files and directories currently installed.)
 Preparing to unpack .../libffi6_3.2.1-4_amd64.deb ...
 Unpacking libffi6:amd64 (3.2.1-4) ...
 Selecting previously unselected package libgmp10:amd64.
@@ -264,7 +264,7 @@ Removing intermediate container ac153f1ef7fd
  ---> ff8d39f2f0d6
 Successfully built ff8d39f2f0d6
 Successfully tagged curler:latest
-[1m[7m%[27m[1m[0m                                                                                                                                                                   ]7;file://PC-MAC13.local/Users/lofman/Projects/devopswithdocker/part1/part1-7/Dockerfile[0m[27m[24m[Jlofman@PC-MAC13 Dockerfile % [K[?2004h[7mdocker run -i curler[27m[20D[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27mi[27m [27mc[27mu[27mr[27ml[27me[27mr [?2004l
+[1m[7m%[27m[1m[0m ]7;file://PC-MAC13.local/Users/lofman/Projects/devopswithdocker/part1/part1-7/Dockerfile[0m[27m[24m[Jlofman@PC-MAC13 Dockerfile % [K[?2004h[7mdocker rn -i curler[27m[20D[27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27mi[27m [27mc[27mu[27mr[27ml[27me[27mr [?2004l
 Input website:
 helsinki.fi
 Seaching...
@@ -278,6 +278,6 @@ Seaching...
 <p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
 </body></html>
 100   231  100   231    0     0  11679      0 --:--:-- --:--:-- --:--:-- 12157
-[1m[7m%[27m[1m[0m                                                                                                                                                                   ]7;file://PC-MAC13.local/Users/lofman/Projects/devopswithdocker/part1/part1-7/Dockerfile[0m[27m[24m[Jlofman@PC-MAC13 Dockerfile % [K[?2004heexit[?2004l
+[1m[7m%[27m[1m[0m ]7;file://PC-MAC13.local/Users/lofman/Projects/devopswithdocker/part1/part1-7/Dockerfile[0m[27m[24m[Jlofman@PC-MAC13 Dockerfile % [K[?2004heexit[?200l
 
 Script done on Sun Apr 26 19:50:29 2020

@@ -1,46 +1,18 @@
-Script started on Sun Apr 26 16:52:50 2020
-[1m[7m%[27m[1m[0m                                                                                                                                                                   ]7;file://PC-MAC13.local/Users/lofman/Projects/devopswithdocker/part1/part1-6/DockerFile[0m[27m[24m[Jlofman@PC-MAC13 DockerFile % [K[?2004hscript exercise1-5[18Drm[4P[12C    [14Dls            [12Dcd Projects/devopswithdocker/part1[34Ddocker container ls -a            [12D  [19Dgit commit -m"Added exercise 1.5"[29Dadd .                        [24D[9Dscript exercise1-5[18Ddocker run -it --name exercise5c  ubuntu:16.04 sh -c 'apt-get update; apt-get install -y curl; echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'[K[2C[A[15Dcontainer ls -a[K[1B[K[A[51C[15Drun -it --name exercise5c  ubuntu:16.04 sh -c 'apt-get update; apt-get install -y curl; echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'[K[2C[A[15Dcontainer ls -a[K[1B[K[A[51C             build -t docker-clock .[?2004l[1BSending build context to Docker daemon  4.096kB
+Script started on Fri May  1 16:47:26 2020
+/devopswithdocker/part1/part1-6/DockerFile % docker build -t docker-clock .
+
+Sending build context to Docker daemon  3.584kB
 Step 1/2 : FROM devopsdockeruh/overwrite_cmd_exercise
  ---> 3d2b622b1849
 Step 2/2 : CMD ["-c", "200"]
- ---> Using cache
- ---> ecb5e47a8dbb
-Successfully built ecb5e47a8dbb
+ ---> Running in 41b1ed070ecd
+Removing intermediate container 41b1ed070ecd
+ ---> 104fee1912b2
+Successfully built 104fee1912b2
 Successfully tagged docker-clock:latest
-[1m[7m%[27m[1m[0m                                                                                                                                                                   ]7;file://PC-MAC13.local/Users/lofman/Projects/devopswithdocker/part1/part1-6/DockerFile[0m[27m[24m[Jlofman@PC-MAC13 DockerFile % [K[?2004hddocker run docker-clock[?2004l
+/devopswithdocker/part1/part1-6/DockerFile % docker run docker-clock
 201
 202
-203
-204
-205
-206
-207
-208
-209
-210
-211
-212
-213
-214
-215
-216
-217
-218
-219
-220
-221
-222
-223
-224
-225
-226
-227
-228
-229
-230
-231
-232
-233
-[1m[7m%[27m[1m[0m                                                                                                                                                                   ]7;file://PC-MAC13.local/Users/lofman/Projects/devopswithdocker/part1/part1-6/DockerFile[0m[27m[24m[Jlofman@PC-MAC13 DockerFile % [K[?2004heexit[?2004l
+devopswithdocker/part1/part1-6/DockerFile % exit
 
-Script done on Sun Apr 26 16:55:14 2020
+Script done on Fri May  1 16:51:35 2020

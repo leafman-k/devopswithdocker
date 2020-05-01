@@ -1,8 +1,5 @@
 Script started on Sat Apr 18 20:03:02 2020
 
-The default interactive shell is now zsh.
-To update your account to use zsh, please run `chsh -s /bin/zsh`.
-For more details, please visit https://support.apple.com/kb/HT208050.
 [?1034hbash-3.2$ docker run -d nginx
 6c24e90ba98631997955c0471a0f38aa3154e4f328ffbd3f09470429c429fdc0
 bash-3.2$ docker run -d nginx
@@ -14,7 +11,7 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 5cb1430999b4        nginx               "nginx -g 'daemon of…"   49 seconds ago      Up 48 seconds       80/tcp              vigorous_kare
 0b9b1994ddb5        nginx               "nginx -g 'daemon of…"   52 seconds ago      Up 51 seconds       80/tcp              infallible_ride
 6c24e90ba986        nginx               "nginx -g 'daemon of…"   56 seconds ago      Up 55 seconds       80/tcp              naughty_allen
-bash-3.2$ docker stop 
+bash-3.2$ docker stop
 "docker stop" requires at least 1 argument.
 See 'docker stop --help'.
 
@@ -23,7 +20,7 @@ Usage:  docker stop [OPTIONS] CONTAINER [CONTAINER...]
 Stop one or more running containers
 bash-3.2$ docker stop naughty_allen
 naughty_allen
-bash-3.2$ docker stop naughty_allen[K[K[K[K[K[K[K[K[K[K[K[K[Kinfallible_ride
+bash-3.2$ docker stop infallible_ride
 infallible_ride
 bash-3.2$ docker ps -a
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS               NAMES
