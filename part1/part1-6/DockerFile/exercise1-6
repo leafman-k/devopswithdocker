@@ -1,16 +1,9 @@
 Script started on Fri May  1 16:47:26 2020
-/devopswithdocker/part1/part1-6/DockerFile % docker build -t docker-clock .
+docker build -t docker-clock .
 
-Sending build context to Docker daemon  3.584kB
-Step 1/2 : FROM devopsdockeruh/overwrite_cmd_exercise
- ---> 3d2b622b1849
-Step 2/2 : CMD ["-c", "200"]
- ---> Running in 41b1ed070ecd
-Removing intermediate container 41b1ed070ecd
- ---> 104fee1912b2
-Successfully built 104fee1912b2
 Successfully tagged docker-clock:latest
-/devopswithdocker/part1/part1-6/DockerFile % docker run docker-clock
+docker run docker-clock
+
 201
 202
 devopswithdocker/part1/part1-6/DockerFile % exit
